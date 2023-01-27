@@ -42,3 +42,122 @@ int main(){
 
   return 0;
 }
+    
+    
+    // #include<iostream>
+#include<bits/stdc++.h>
+
+using namespace std;
+
+// pass by val.
+// void increment(int a){
+//   a++;
+//   return ;
+// }
+
+// pass by pointer
+// void increment(int*a){
+//   (*a)++;
+//   return ;
+// }
+
+// pass by ref.
+void increment(int&a){
+  // (*a)++;
+ 
+//  int&b = 
+  a++;
+  return ;
+}
+
+// ->Address;
+// int i ;
+// cout<< &i
+
+// int&j =  
+
+int main(){
+
+  int i = 11;
+  // int &j = i ;
+  // j++;
+
+  // cout<<i<<endl;
+
+
+  increment(i);
+
+  cout<<i<<endl;
+
+  return 0;
+}
+    
+    
+    // #include<iostream>
+#include<bits/stdc++.h>
+
+using namespace std;
+
+// itrative fun
+// int power(int base,int pow){
+
+//   int num = 1;
+//   for(int i = 0;i<pow;i++){
+//     num*=base; //num = num*base;
+//   }
+
+//   return num;
+// }
+
+// void fun(vector<vector<int>>&arr)
+
+void fun(int arr[][]){
+  return;
+}
+
+
+// recursive fun
+int power(int base,int pow){
+
+  // 1. base case 
+  // 2. assumption 
+  // 3. cal.
+
+  if(pow == 0)return 1;
+
+  int smlAns = power(base,pow-1); // smlAns - > 2^2
+  
+  return smlAns*base;
+}
+
+int main(){
+  int arr[5][4];
+  fun(arr);
+  cout<<power(2,3);
+
+  return 0;
+}
+    
+    
+    
+    // #include<iostream>
+#include<bits/stdc++.h>
+
+using namespace std;
+
+// int sum(int a,int b);
+
+int sum(int a ,int b= 0){
+  return a+b;
+}
+
+int main(){
+
+  cout<<sum(2);
+
+  return 0;
+}
+
+//  int sum(int a,int b){
+//   return a+b;
+// }
